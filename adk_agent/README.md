@@ -23,27 +23,6 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### Environment Variables
-Set them in PowerShell (or use `.env` in `my_agent/`):
-```powershell
-$Env:GOOGLE_GENAI_USE_VERTEXAI = "1"
-$Env:GOOGLE_CLOUD_PROJECT = "your-project-id"
-$Env:GOOGLE_CLOUD_LOCATION = "us-central1"
-$Env:PROJECT_ID = $Env:GOOGLE_CLOUD_PROJECT
-$Env:VERTEX_LOCATION = "us-central1"
-$Env:GEMINI_MODEL = "gemini-2.5-pro"
-$Env:BQ_DATASET = "vfin_sme"
-$Env:BQ_TABLE = "store_daily_transactions"
-$Env:FORECAST_MODEL = "sales_forecast_model"
-$Env:VFIN_SME_API_TIMEOUT = "90"
-$Env:CONTRACT_PROCESSOR_ID = "<docai-processor-id>"
-$Env:CONTRACT_PROCESSOR_LOCATION = "us"
-$Env:CONTRACT_TABLE = "contract_intelligence"
-$Env:DOCUMENTAI_PROJECT = "<docai-project-number>"
-$Env:ACCESS_AUDIT = "audit123"
-$Env:ACCESS_CEO = "ceo123"
-```
-Adjust values for your environment. If you prefer a `.env` file inside `my_agent/`, ADK loads it automatically.
 
 ---
 
